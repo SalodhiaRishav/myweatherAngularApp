@@ -1,0 +1,10 @@
+  <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" *ngIf="isCityFetched">
+      <div class="col p-4 d-flex flex-column position-static">
+        <h3 class="mb-0">{{city.name}}</h3>
+        <div class="mb-1 text-muted">Longitude : {{city.coord.lon}}</div>
+        <div class="mb-1 text-muted">Latitude : {{city.coord.lat}}</div>
+        <div class="mb-1 text-muted">Country : {{city.country}}</div>
+
+      </div>
+    </div>
+   <app-hour-forecast-list></app-hour-forecast-list>

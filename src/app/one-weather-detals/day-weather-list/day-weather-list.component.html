@@ -1,0 +1,9 @@
+<ul class="list-group" *ngIf="isCityFound">
+  <div *ngFor="let weatherItem of listOfFiveDayWeather">
+      <app-day-weather-one-item [weather_item]="weatherItem"></app-day-weather-one-item>
+  </div>
+  </ul>
+
+  <div *ngIf="!isCityFound">
+    City Not Found
+    </div>

@@ -1,0 +1,5 @@
+<ul class="list-group" *ngIf="isCityClicked">
+    <div *ngFor="let weatherItem of listOfHourForecast">
+        <app-hour-forecast-singleitem [weather_item]="weatherItem"></app-hour-forecast-singleitem>
+    </div>
+    </ul>

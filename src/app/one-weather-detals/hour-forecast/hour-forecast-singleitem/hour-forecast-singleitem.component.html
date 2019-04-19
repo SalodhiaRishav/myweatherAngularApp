@@ -1,0 +1,19 @@
+<li class="list-group-item">
+    <div class="float-left">
+      <img src={{weather_item.icon}}  alt="" srcset="">
+    </div>
+    <div>
+       <span style="font-size: 13px">{{(weather_item.temperature).toPrecision(4)}} C</span> |
+       <span style="font-size: 13px">{{weather_item.description}}</span>     
+      </div>
+      <div style="font-size: 12px">
+          Windspeed : <span>{{weather_item.windspeed}} km/h</span> |
+          Humidity : <span>{{(weather_item.humidity).toPrecision(4)}}%</span> |
+          Pressure :<span>{{weather_item.pressure.toPrecision(4)}}hpa</span>
+  
+         </div>
+  
+  
+  </li>
+  
+  
