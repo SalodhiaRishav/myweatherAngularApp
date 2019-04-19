@@ -1,5 +1,12 @@
 <ul class="list-group" *ngIf="isCityClicked">
+    <li class="list-group-item" style="font-size: 16px">
+      Full Weather forecasting for Date : {{listOfHourForecast[0].date.toDateString()}}
+    </li>
     <div *ngFor="let weatherItem of listOfHourForecast">
         <app-hour-forecast-singleitem [weather_item]="weatherItem"></app-hour-forecast-singleitem>
     </div>
     </ul>
+
+    <div *ngIf="!isCityClicked">
+        select any day from list
+        </div>

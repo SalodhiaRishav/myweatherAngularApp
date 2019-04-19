@@ -1,4 +1,7 @@
 <li class="list-group-item">
+    <div  style="font-size: 13px">
+        {{weather_item.date.getHours()}}:{{weather_item.date.getMinutes()}}0
+      </div>
     <div class="float-left">
       <img src={{weather_item.icon}}  alt="" srcset="">
     </div>
@@ -10,9 +13,7 @@
           Windspeed : <span>{{weather_item.windspeed}} km/h</span> |
           Humidity : <span>{{(weather_item.humidity).toPrecision(4)}}%</span> |
           Pressure :<span>{{weather_item.pressure.toPrecision(4)}}hpa</span>
-  
          </div>
-  
   
   </li>
   
